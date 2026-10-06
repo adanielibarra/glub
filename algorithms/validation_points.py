@@ -104,8 +104,8 @@ class GenerateValidationPoints(QgsProcessingAlgorithm):
                 out + "|layername=validation_points",
                 QgsProcessingContext.LayerDetails(L("validation points", "puntos de validación"),
                                                   context.project(), "OUTPUT"))
-        except Exception:
-            pass
+        except Exception as e:   # the file is written; only loading it into the project failed
+            feedback.pushInfo(str(e))
         return {"OUTPUT": out, "STRATA": g["strata_csv"]}
 
 

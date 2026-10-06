@@ -52,6 +52,6 @@ class PolygonizeMap(QgsProcessingAlgorithm):
         try:
             context.addLayerToLoadOnCompletion(out + "|layername=classes", QgsProcessingContext.LayerDetails(
                 L("polygons", "polígonos"), context.project(), "OUTPUT"))
-        except Exception:
-            pass
+        except Exception as e:   # the file is written; only loading it into the project failed
+            feedback.pushInfo(str(e))
         return {"OUTPUT": out}

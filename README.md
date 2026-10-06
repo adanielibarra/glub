@@ -1,5 +1,7 @@
 # GLUB (GIS Looking Under the Blue)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23186099.svg)](https://doi.org/10.5281/zenodo.23186099)
+
 Seagrass and shallow seabed mapping for QGIS. One window with tabs (menu *GLUB*,
 its toolbar button, or *Raster > GLUB*), in Spanish and English. Every tool is
 also in the Processing Toolbox for models and batch runs.
@@ -7,7 +9,7 @@ also in the Processing Toolbox for models and batch runs.
 GLUB is the companion of **StarShoal** (satellite-derived bathymetry): StarShoal's
 depth and trust rasters tell GLUB where the satellite sees the bottom.
 
-Tabs (version 1.0.0):
+Tabs (version 1.0.1):
 
 1. **Download Sentinel-2** from the Copernicus Data Space Ecosystem (free account).
 2. **Prepare**: Sentinel-2 L2A (Sen2Cor), **Landsat 4-9 Collection 2 Level-2** (USGS, 30 m,
@@ -169,8 +171,11 @@ GitHub [adanielibarra](https://github.com/adanielibarra)
 
 ## How to cite
 
-See `CITATION.cff` (GitHub shows it as "Cite this repository"); `.zenodo.json` fills in the
-Zenodo record when a GitHub release is archived.
+Ibarra-Marinas, D., Fenollar-Rueda, A., García-García, A. M. de J., Bellido-Solano, Á.,
+Mata-Chacón, D., Serrano-Vicente, M. and Mora-Olivo, A. (2026). GLUB (GIS Looking Under the
+Blue) (version 1.0.0) [QGIS plugin]. Zenodo. https://doi.org/10.5281/zenodo.23186099
+
+See also `CITATION.cff` (GitHub shows it as "Cite this repository").
 
 ## License
 

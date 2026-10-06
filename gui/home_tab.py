@@ -2,6 +2,7 @@
 import configparser
 import os
 
+from qgis.core import Qgis, QgsMessageLog
 from qgis.PyQt.QtCore import Qt, pyqtSignal
 from qgis.PyQt.QtGui import QPixmap
 from qgis.PyQt.QtWidgets import (QComboBox, QFrame, QHBoxLayout, QLabel, QPushButton,
@@ -343,8 +344,8 @@ class HomeTab(QWidget, Translatable):
         try:
             from qgis.core import QgsSettings
             QgsSettings().setValue("GLUB/mode", "simple" if i == 0 else "advanced")
-        except Exception:
-            pass
+        except Exception as e:   # the mode still applies in this session
+            QgsMessageLog.logMessage(f"Could not save the mode: {e}", "GLUB", Qgis.MessageLevel.Info)
         self.modeChanged.emit(i == 0)
 
     def _lang_changed(self):

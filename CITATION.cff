@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use GLUB, please cite it as below."
 type: software
 title: "GLUB (GIS Looking Under the Blue): seagrass and shallow seabed mapping for QGIS"
-version: 1.0.0
+version: 1.0.1
+doi: 10.5281/zenodo.23186099
 license: GPL-2.0-or-later
 repository-code: "https://github.com/adanielibarra/glub"
 url: "https://github.com/adanielibarra/glub"

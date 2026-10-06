@@ -1,6 +1,6 @@
 import os
 
-from qgis.core import QgsApplication
+from qgis.core import Qgis, QgsApplication, QgsMessageLog
 from qgis.PyQt.QtGui import QIcon
 
 try:
@@ -90,8 +90,8 @@ class GlubPlugin:
             box = dock.findChild(QLineEdit, "searchBox")
             if box is not None:
                 box.setText("GLUB")
-        except Exception:  # never break QGIS for a convenience
-            pass
+        except Exception as e:  # never break QGIS for a convenience
+            QgsMessageLog.logMessage(f"Could not open the Processing toolbox: {e}", "GLUB", Qgis.MessageLevel.Info)
 
     def run(self, tab=0):
         from .gui.main_dialog import GlubDialog
