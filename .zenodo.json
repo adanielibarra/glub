@@ -1,0 +1,57 @@
+{
+  "title": "GLUB (GIS Looking Under the Blue): seagrass and shallow seabed mapping for QGIS",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "creators": [
+    {
+      "name": "Ibarra-Marinas, Daniel",
+      "affiliation": "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas",
+      "orcid": "0000-0003-3683-4456"
+    },
+    {
+      "name": "Fenollar-Rueda, Alejandro",
+      "affiliation": "Universidad de Alicante",
+      "orcid": "0009-0005-4229-8778"
+    },
+    {
+      "name": "García-García, Ana Mónica de Jhesú",
+      "affiliation": "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas",
+      "orcid": "0000-0001-6613-6945"
+    },
+    {
+      "name": "Bellido-Solano, Ángela",
+      "affiliation": "Universidad Complutense de Madrid"
+    },
+    {
+      "name": "Mata-Chacón, Dulce",
+      "affiliation": "Instituto Español de Oceanografía (IEO-CSIC)",
+      "orcid": "0000-0003-3294-8210"
+    },
+    {
+      "name": "Serrano-Vicente, Marta",
+      "affiliation": "Universidad de Murcia"
+    },
+    {
+      "name": "Mora-Olivo, Arturo",
+      "affiliation": "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas",
+      "orcid": "0000-0002-9654-0305"
+    }
+  ],
+  "description": "QGIS plugin to map seagrass meadows and shallow benthic habitats from satellite imagery: download and preparation of Sentinel-2 surface reflectance, Landsat 4-9 Collection 2 Level-2 import, ACOLITE import or any multiband reflectance raster, sunglint correction, median composites with a water-clarity ranking of the scenes, Lyzenga depth-invariant index, optional bottom texture, supervised classification with a three-state depth mask (bottom visible, not visible, too deep), spatial-block validation, stratified random validation points, error-corrected areas (Olofsson et al., 2014), change between two class maps and export of the maps to polygons.",
+  "keywords": [
+    "seagrass",
+    "benthic habitat mapping",
+    "Sentinel-2",
+    "QGIS",
+    "water column correction",
+    "accuracy assessment"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/adanielibarra/glub",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

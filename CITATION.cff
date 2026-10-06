@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use GLUB, please cite it as below."
+type: software
+title: "GLUB (GIS Looking Under the Blue): seagrass and shallow seabed mapping for QGIS"
+version: 1.0.0
+license: GPL-2.0-or-later
+repository-code: "https://github.com/adanielibarra/glub"
+url: "https://github.com/adanielibarra/glub"
+authors:
+  - family-names: Ibarra-Marinas
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0003-3683-4456"
+    email: daniel.ibarra@uat.edu.mx
+    affiliation: "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas"
+  - family-names: Fenollar-Rueda
+    given-names: Alejandro
+    orcid: "https://orcid.org/0009-0005-4229-8778"
+    affiliation: "Universidad de Alicante"
+  - family-names: García-García
+    given-names: Ana Mónica de Jhesú
+    orcid: "https://orcid.org/0000-0001-6613-6945"
+    affiliation: "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas"
+  - family-names: Bellido-Solano
+    given-names: Ángela
+    affiliation: "Universidad Complutense de Madrid"
+  - family-names: Mata-Chacón
+    given-names: Dulce
+    orcid: "https://orcid.org/0000-0003-3294-8210"
+    affiliation: "Instituto Español de Oceanografía (IEO-CSIC)"
+  - family-names: Serrano-Vicente
+    given-names: Marta
+    affiliation: "Universidad de Murcia"
+  - family-names: Mora-Olivo
+    given-names: Arturo
+    orcid: "https://orcid.org/0000-0002-9654-0305"
+    affiliation: "Facultad de Ingeniería y Ciencias, Universidad Autónoma de Tamaulipas"
+abstract: >-
+  QGIS plugin to map seagrass meadows and shallow benthic habitats from satellite
+  imagery: download and preparation of Sentinel-2 surface reflectance, Landsat 4-9
+  Collection 2 Level-2 import, ACOLITE import or any multiband reflectance raster,
+  sunglint correction, median composites with a water-clarity ranking of the scenes,
+  Lyzenga depth-invariant index, optional bottom texture, supervised classification
+  with a three-state depth mask (bottom visible, not visible, too deep), spatial-block
+  validation, stratified random validation points, error-corrected areas (Olofsson et
+  al., 2014), change between two class maps and export of the maps to polygons.
+keywords:
+  - seagrass
+  - benthic habitat mapping
+  - Sentinel-2
+  - QGIS
+  - water column correction
+  - accuracy assessment
